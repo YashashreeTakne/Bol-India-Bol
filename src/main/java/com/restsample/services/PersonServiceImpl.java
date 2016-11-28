@@ -38,5 +38,13 @@ private PersonDao personDao;
 		personDao.savePerson(person);
 	}
 
+	public Person updatePerson(int id, Person person) {
+		return personDao.updatePerson(id, person);
+	}
 
+
+	public void deletePerson(int id) {
+		 personDao.deletePerson(id);
+		
+	}
 }
